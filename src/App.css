@@ -84,8 +84,16 @@ body{
 	text-decoration: none;
 	padding-top: 1.4rem;
 	padding-right: 1.4rem;
-	padding-left: 1.4rem;
-	
+	padding-left: 1.4rem;	
+}
+
+.lynx:hover{
+	font-size: 1.4em;
+	color: #F19433;
+	text-decoration: none;
+	padding-top: 1.4rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;	
 }
 
 a{
@@ -162,6 +170,10 @@ a{
 	margin: 1rem
 }
 
+strong{
+	font-weight: bold;
+}
+
 em{
 	font-style: italic
 }
@@ -173,6 +185,7 @@ em{
 
 h1{
   font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 h2{

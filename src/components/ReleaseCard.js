@@ -31,10 +31,9 @@ export class ReleaseCard extends Component{
     return (
         <div className="card">
             <img className="cover" src={this.state.cover} alt={this.state.title} />
-            <h1>{this.state.title}</h1>
-            <br/>
-            <p>Lowest Price: <a class="price" href={this.state.market}>{this.state.price}</a></p>
-            <h2>‏‏‎ ‎</h2>
+            <h1><strong>{this.state.title}</strong></h1>
+            <p>Lowest Price:</p>
+            <h1><a class="price" href={this.state.market}>{this.state.price}</a></h1>
         </div>
   )}
 }

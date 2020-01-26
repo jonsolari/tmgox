@@ -33,10 +33,11 @@ export class Variant extends Component{
     return (
         <div className={this.state.color}>
             <img className="cover" src={this.state.cover} alt={this.state.title} />
-            <h1>{this.state.title}</h1>
+            <h1><strong>{this.state.title}</strong></h1>
             <h2><em>({this.state.color} variant)</em></h2>
             <br/>
-            <p>Lowest Price: <a class="price" href={this.state.market}>{this.state.price}</a></p>
+            <p>Lowest Price: </p>
+            <h1><a class="price" href={this.state.market}>{this.state.price}</a></h1>
         </div>
   )}
 }
