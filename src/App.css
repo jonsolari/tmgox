@@ -53,34 +53,134 @@ table {
   font-size: 62.5%;
 }
 
+body{
+	background-color: grey;
+}
+
 .App{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.tab{
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+	height: 4rem;
+}
+
+.logo{
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: .5rem;
+	margin-right: 1.4rem;
+}
+
+.lynx{
+	font-size: 1.4em;
+	color: white;
+	text-decoration: none;
+	padding-top: 1.4rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+.price{
+	color: #008ABC
 }
 
 .card{
   text-align: center;
-  padding: 1rem;
-  border: 1px dotted black;
-  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 10px
+  align-self: center;
+  background-color: darkgrey;
+  margin: 1rem
+}
+
+.card:hover{
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color:lightgrey;
+	margin: 1rem
+}
+
+.yellow{
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #FFF79D;
+	margin: 1rem
+}
+
+.yellow:hover{
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #FCFFCB;
+	margin: 1rem
+}
+
+.green{
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #CCFFCA;
+	margin: 1rem
+}
+
+.green:hover{
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #E8FFE8;
+	margin: 1rem
+}
+
+em{
+	font-style: italic
 }
 
 .cover{
-	width: 300px;
-	height: 300px;
+	height: 349px;
 	margin: 1rem auto;
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 h2{
   font-size: 2rem;
+}
+
+h3{
+  font-size: 1rem;
 }
 
 p{

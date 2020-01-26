@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
-export class AlbumCard extends Component{
+export class Variant extends Component{
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+        color: props.color
+    };
     this.album(props.url);
   }
 
@@ -27,16 +29,16 @@ export class AlbumCard extends Component{
   }
 
   render(){
-      
-  return (
-    <div className="card">
-    <img className="cover" src={this.state.cover} alt={this.state.title} />
-    <h1>{this.state.title}</h1>
-    <br/>
-    <p>Lowest Price for LP: <a class="price" href={this.state.market}>{this.state.price}</a></p>
-    <h2>‎‎‏‏‎ ‎</h2>
-    </div>
+    console.log(this.state);
+    return (
+        <div className={this.state.color}>
+            <img className="cover" src={this.state.cover} alt={this.state.title} />
+            <h1>{this.state.title}</h1>
+            <h2><em>({this.state.color} variant)</em></h2>
+            <br/>
+            <p>Lowest Price: <a class="price" href={this.state.market}>{this.state.price}</a></p>
+        </div>
   )}
 }
 
-export default AlbumCard; 
+export default Variant 

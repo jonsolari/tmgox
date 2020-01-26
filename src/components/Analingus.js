@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class AlbumCard extends Component{
+export class Analingus extends Component{
 
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ export class AlbumCard extends Component{
           title: response.title,
           artist: "the Mountain Goats",
           price: response.lowest_price ? `$${response.lowest_price}` : "Not Available.",
-          cover: `/img/${response.title}.jpg`,
+          cover: "/img/TabooVI.jpg",
           market: `http://www.discogs.com/sell/release/${response.id}`
         });
       })
@@ -27,16 +27,16 @@ export class AlbumCard extends Component{
   }
 
   render(){
-      
-  return (
-    <div className="card">
-    <img className="cover" src={this.state.cover} alt={this.state.title} />
-    <h1>{this.state.title}</h1>
-    <br/>
-    <p>Lowest Price for LP: <a class="price" href={this.state.market}>{this.state.price}</a></p>
-    <h2>‎‎‏‏‎ ‎</h2>
-    </div>
+    console.log(this.state);
+    return (
+        <div className="card">
+            <img className="cover" src="/img/TabooVI.jpg" alt={this.state.title} />
+            <h1>{this.state.title}</h1>
+            <br/>
+            <p>Lowest Price: <a class="price" href={this.state.market}>{this.state.price}</a></p>
+            <h2>‏‏‎ ‎</h2>
+        </div>
   )}
 }
 
-export default AlbumCard; 
+export default Analingus 
