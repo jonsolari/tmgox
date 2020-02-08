@@ -99,6 +99,8 @@ a{
 
 .price{
 	color: #32585D;
+	font-size: 2.2rem;
+	line-height: 3rem;
 }
 
 body{
@@ -107,8 +109,9 @@ body{
 
 .card{
   text-align: center;
+  border: 1px solid black;
   padding: 1.5rem;
-  border-radius: 25px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -117,9 +120,11 @@ body{
 }
 
 .card:hover{
+	transform: scale(1.05);
 	text-align: center;
+	border: 1px solid black;
 	padding: 1.5rem;
-	border-radius: 25px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -129,8 +134,9 @@ body{
 
 .yellow{
 	text-align: center;
+	border: 1px solid black;
 	padding: 1.5rem;
-	border-radius: 25px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -140,8 +146,10 @@ body{
 
 .yellow:hover{
 	text-align: center;
+	border: 1px solid black;
+	transform: scale(1.05);
 	padding: 1.5rem;
-	border-radius: 25px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -151,8 +159,9 @@ body{
 
 .green{
 	text-align: center;
+	border: 1px solid black;
 	padding: 1.5rem;
-	border-radius: 25px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -162,8 +171,10 @@ body{
 
 .green:hover{
 	text-align: center;
+	border: 1px solid black;
+	transform: scale(1.05);
 	padding: 1.5rem;
-	border-radius: 25px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
