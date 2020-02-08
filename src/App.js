@@ -16,7 +16,8 @@ function App(){
       return(
           <Router>
             <div class="tab">
-              <Link to="/"><img class="logo" src="/img/tMGox.png"/></Link>
+              <h1>TMGOX the Mountain Goats Online Exchange</h1>
+              <Link to="/"><img class="logo" alt="tMGOX logo" src="/img/tMGox.png"/></Link>
               <Link to="/" class="lynx">THE FIRST FIVE</Link>
               <Link to="/extendedplays" class="lynx">EPs</Link>
               <Link to="/goodluckchief" class="lynx">GOOD LUCK CHIEF</Link>

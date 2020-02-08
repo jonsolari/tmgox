@@ -29,12 +29,13 @@ export class AlbumCard extends Component{
   render(){
       
   return (
+    <a href={this.state.market}>
     <div className="card">
     <img className="cover" src={this.state.cover} alt={this.state.title} />
-    <h1><strong>{this.state.title}</strong></h1>
+    <p class="two"><strong>{this.state.title}</strong></p>
     <p>Lowest Price for LP:</p>
-    <h1><a class="price" href={this.state.market}>{this.state.price}</a></h1>
-    </div>
+    <p class="price">{this.state.price}</p>
+    </div></a>
   )}
 }
 

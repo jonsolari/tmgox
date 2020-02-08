@@ -31,14 +31,15 @@ export class Variant extends Component{
   render(){
     console.log(this.state);
     return (
+      <a href={this.state.market}>
         <div className={this.state.color}>
             <img className="cover" src={this.state.cover} alt={this.state.title} />
-            <h1><strong>{this.state.title}</strong></h1>
-            <h2><em>({this.state.color} variant)</em></h2>
+            <p class="two"><strong>{this.state.title}</strong></p>
+            <p class="three"><em>({this.state.color} variant)</em></p>
             <br/>
             <p>Lowest Price: </p>
-            <h1><a class="price" href={this.state.market}>{this.state.price}</a></h1>
-        </div>
+            <p class="price">{this.state.price}</p>
+        </div></a>
   )}
 }
 
