@@ -45,4 +45,11 @@ def getdata(release):
 for i in releaselist:
     ebaydata[i[0]] = getdata(i[1])
 
+
+
+
+
+
+discogsurls = [(1, 'https://api.discogs.com/releases/1601354'), (2, 'https://api.discogs.com/releases/1191772'), (3, 'https://api.discogs.com/releases/744810'), (4, 'https://api.discogs.com/releases/523351'), (5, 'https://api.discogs.com/releases/1217804'), (6, 'https://api.discogs.com/releases/1625208'), (7, 'https://api.discogs.com/releases/1625203'), (8, 'https://api.discogs.com/releases/1210894'), (9, 'https://api.discogs.com/releases/1526609'), (10, 'https://api.discogs.com/releases/1516102'), (11, 'https://api.discogs.com/releases/1763341'), (12, 'https://api.discogs.com/releases/2767923'), (13, 'https://api.discogs.com/releases/769960'), (14, 'https://api.discogs.com/releases/2873969'), (15, 'https://api.discogs.com/releases/4880289'), (16, 'https://api.discogs.com/releases/5118937'), (17, 'https://api.discogs.com/releases/1350468')]
+
 print(ebaydata)
