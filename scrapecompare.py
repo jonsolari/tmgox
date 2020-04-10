@@ -28,7 +28,7 @@ def get_detail_data(soup):
 
 # TODO loop over list of releases to search for, update JSON / remove things no longer available 
 
-releaselist = ["mountain goats zopilote machine lp", "mountain goats sweden lp",  "mountain goats nothing for juice lp",  "mountain goats full force galesburg lp",  "mountain goats coroner's gambit lp",  "mountain goats new asian cinema",  "mountain goats isopanisad radio hour",  "mountain goats devil in the shortwave",  "mountain goats black pear tree",  "mountain goats satanic messiah",  "mountain goats moon colony bloodbath",  "mountain goats taboo cassette",  "mountain goats come come to the sunset tree lp",  "mountain goats on juhu beach",  "mountain goats black pear tree yellow",  "mountain goats moon colony bloodbath green"]
+releaselist = [(1, "mountain goats zopilote machine lp"), (2, "mountain goats sweden lp"),  (3, "mountain goats nothing for juice lp"), (4, "mountain goats full force galesburg lp"),  (5, "mountain goats coroner's gambit lp"), (6, "mountain goats new asian cinema"),  (7, "mountain goats isopanisad radio hour"), (8, "mountain goats devil in the shortwave"), (9,"mountain goats black pear tree"), (10, "mountain goats satanic messiah"), (11, "mountain goats moon colony bloodbath"), (12, "mountain goats taboo cassette"), (13, "mountain goats come come to the sunset tree"), (14, "mountain goats on juhu beach"), (15, "mountain goats black pear tree yellow"),  (16, "mountain goats moon colony bloodbath green")]
 ebaydata = {}
 
 
@@ -38,4 +38,6 @@ def getdata(release):
     get_detail_data(get_page(url))
 
 for i in releaselist:
-    print(getdata(i))
+    ebaydata[i[0]] = getdata(i[1])
+
+print(ebaydata)
