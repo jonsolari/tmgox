@@ -111,6 +111,7 @@ body{
   text-align: center;
   border: 1px solid black;
   padding: 1.5rem;
+  width: 23rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -135,6 +136,8 @@ body{
 .yellow{
 	text-align: center;
 	border: 1px solid black;
+	width: 23rem;
+
 	padding: 1.5rem;
 	border-radius: 5px;
 	display: flex;
@@ -160,6 +163,7 @@ body{
 .green{
 	text-align: center;
 	border: 1px solid black;
+	width: 23rem;
 	padding: 1.5rem;
 	border-radius: 5px;
 	display: flex;

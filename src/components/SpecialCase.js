@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class Analingus extends Component{
+export class SpecialCase extends Component{
 
   constructor(props) {
     super(props);
@@ -39,4 +39,4 @@ export class Analingus extends Component{
   )}
 }
 
-export default Analingus 
+export default SpecialCase

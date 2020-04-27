@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ReleaseCard from './ReleaseCard.js';
-import Analingus from './Analingus.js';
+import SpecialCase from './SpecialCase.js';
 import Variant from './Variant.js';
 
   
@@ -10,7 +10,7 @@ class GoodLuck extends Component {
 render(){
   return (
     <div className="App">
-      <Analingus
+      <SpecialCase
         url = 'https://api.discogs.com/releases/2767923'
       />
       <ReleaseCard
