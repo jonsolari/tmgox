@@ -70,7 +70,7 @@ table {
 .logo{
 	max-height: 100%;
 	max-width: 100%;
-	margin-left: .5rem;
+	margin-left: 2.3rem;
 	margin-right: 1.4rem;
 }
 
@@ -222,3 +222,24 @@ p{
   font-size: 1.6rem;
 }
 
+/* tablet */
+
+@media only screen and (max-width: 934px){
+	body{
+		background-color: white;
+	}
+
+	.card{
+		width: 14rem;
+	}
+
+	.cover{
+		height: 224px;	
+		margin: 0 auto 1rem auto;	
+	}
+	.two{
+		font-size: 1.8rem;
+		line-height: 2rem;
+		margin-bottom: .2rem;
+	}
+}
