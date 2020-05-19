@@ -274,12 +274,23 @@ p{
 /* phone */
 
 @media only screen and (max-width: 645px){
+
+	.logo{
+		margin-left: 21%;
+		height: 100%;
+	}
+
 	.tab{
 		flex-direction: column;
+		height: 10rem;
+	}
+
+	.lynx{
+		display: none;
 	}
 
 	.card{
-		width: 30rem;
+		width: 25rem;
 	}
 
 	.cover{
@@ -297,6 +308,7 @@ p{
 
 	p{
 		font-size: 2rem;
+		margin-top: 1rem;
 	}
 
 	.price{
