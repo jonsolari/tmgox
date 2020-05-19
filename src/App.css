@@ -75,7 +75,7 @@ table {
 }
 
 .lynx{
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	color: white;
 	text-decoration: none;
 	padding-top: 1.4rem;
@@ -225,11 +225,15 @@ p{
 /* tablet */
 
 @media only screen and (max-width: 934px){
-	body{
-		background-color: white;
+	.card{
+		width: 14rem;
 	}
 
-	.card{
+	.green{
+		width: 14rem;
+	}
+
+	.yellow{
 		width: 14rem;
 	}
 
@@ -241,5 +245,63 @@ p{
 		font-size: 1.8rem;
 		line-height: 2rem;
 		margin-bottom: .2rem;
+	}
+
+	.lynx{
+		font-size: 1.2rem;
+		text-align: center;
+		width: 8rem;
+	}
+
+	.logo{
+		max-height: 80%;
+		margin-top: .4rem;
+		margin-left: 1.5rem;
+	}
+
+	.tab{
+		height: 5rem;
+	}
+}
+
+@media only screen and (max-width: 795px){
+	.lynx{
+		margin: auto;
+		padding-top: 0;
+	}
+}
+
+/* phone */
+
+@media only screen and (max-width: 645px){
+	.tab{
+		flex-direction: column;
+	}
+
+	.card{
+		width: 30rem;
+	}
+
+	.cover{
+		height: 445px;
+	}
+
+	.two{
+		font-size: 3rem;
+  		line-height: 3rem;
+	}
+
+	.three{
+		font-size: 2.5rem;
+	}
+
+	p{
+		font-size: 2rem;
+	}
+
+	.price{
+		font-size: 5rem;
+		line-height: 5rem;
+		margin: 2rem;
 	}
 }
