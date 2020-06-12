@@ -23,7 +23,7 @@ public class Release
     {
     }
 
-    public Release(String ebaysearch, String discogsid, double price, String title, String artist)
+    public Release(String ebaysearch, String discogsid, double price, String title, String artist, String url)
     {
         this.ebaysearch = ebaysearch;
         this.discogsid = discogsid;
