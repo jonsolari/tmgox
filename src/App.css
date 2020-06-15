@@ -58,20 +58,36 @@ table {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.About{
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	width: 100%;
+	height: 100vh;
+  }
+
+.main{
+	display: flex;
+	flex-direction: row;
 }
 
 .tab{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	background-color: black;
-	height: 4rem;
+	width: 15vw;
+	
 }
 
 .logo{
 	max-height: 100%;
-	max-width: 100%;
-	margin-left: 2.3rem;
-	margin-right: 1.4rem;
+	max-width: 85%;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .lynx{
@@ -95,6 +111,14 @@ table {
 a{
 	color: black;
 	text-decoration: none;
+}
+
+.white{
+	color: white;
+}
+
+.white:hover{
+	color: #F19433;
 }
 
 .price{
@@ -219,10 +243,37 @@ h1{
 
 
 p{
-  font-size: 1.6rem;
+	margin: 0 auto;
+	font-size: 1.3rem;
 }
 
-/* tablet */
+.text{
+	margin-top: 1rem;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin: 5% auto;
+}
+
+input{
+	width: 15rem;
+	margin: .3rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+
+.btn{
+	padding-top: .2rem;
+	border-radius: 5px;
+	height: 2rem;
+	width: auto;
+	background-color: rgb(255, 184, 107);
+}
+
+/* tablet 
 
 @media only screen and (max-width: 934px){
 	.card{
@@ -271,7 +322,7 @@ p{
 	}
 }
 
-/* phone */
+ phone 
 
 @media only screen and (max-width: 645px){
 
@@ -316,4 +367,4 @@ p{
 		line-height: 5rem;
 		margin: 2rem;
 	}
-}
+} */
