@@ -63,12 +63,18 @@ table {
 }
 
 .About{
+	margin: 5rem;
+	width: 100%;
+	height: 100vh;
+  }
+
+.RegLog{
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
 	width: 100%;
 	height: 100vh;
-  }
+}
 
 .main{
 	display: flex;

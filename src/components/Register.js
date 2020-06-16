@@ -27,7 +27,7 @@ export default function Register(props){
     })
     }
         return(
-        <div class="About">
+        <div class="RegLog">
             <form onSubmit={register}>
                 <input type="text" name="username" placeholder="Username" onChange={handleChange}/>
                 <input type="email" name="email" placeholder="Email" onChange={handleChange}/>

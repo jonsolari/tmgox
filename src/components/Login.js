@@ -28,7 +28,7 @@ export default function Login(props){
     }
 
         return(
-        <div class="About">
+        <div class="RegLog">
             <form onSubmit={login}>
                 <input type="text" name="username" placeholder="Username" onChange={handleChange}/>
                 <input type="password" name="password" placeholder="Password" onChange={handleChange}/>
