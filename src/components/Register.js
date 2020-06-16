@@ -1,21 +1,43 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import axios from 'axios';
 
-export class Register extends Component {
-    render(){
+export default function Register(props){
+    const [info, setInfo] = useState({
+        username: '',
+        email: '',
+        password: '',
+        confirm: ''
+    })
+    
+    const handleChange = e => {
+        setInfo({
+            ...info,
+            [e.target.name]: e.target.value   
+        })
+    }
+    
+    const register = e => {
+        e.preventDefault();
+        console.log(info);
+        axios()
+            .post('login-URL', info)
+            .then(res => {localStorage.setItem('token', res.data.payload);
+            props.history.push('/wishlist');
+    })
+    }
         return(
         <div class="About">
-            <form>
-                <input type="text" placeholder="Username"/>
-                <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Password"/>
-                <input type="password" placeholder="Confirm Password"/>
-                <input type="button" class="btn" value="Submit" />
+            <form onSubmit={register}>
+                <input type="text" name="username" placeholder="Username" onChange={handleChange}/>
+                <input type="email" name="email" placeholder="Email" onChange={handleChange}/>
+                <input type="password" name="password" placeholder="Password" onChange={handleChange}/>
+                <input type="password" name="confirm" placeholder="Confirm Password" onChange={handleChange}/>
+                <button class="btn">Submit</button>
             </form>
             <p class="text">Already have an account? <Link to="/login">Login</Link></p>
         </div>
         )
-    }
 
 
 
@@ -23,5 +45,3 @@ export class Register extends Component {
 
 
 }
-
-export default Register;
