@@ -21,7 +21,7 @@ export default function Login(props){
         e.preventDefault();
         console.log(info);
         axiosWithAuth()
-            .post('login-URL', info)
+            .post('login-endpoint-URL', info)
             .then(res => {localStorage.setItem('token', res.data.payload);
             props.history.push('/wishlist');
     })

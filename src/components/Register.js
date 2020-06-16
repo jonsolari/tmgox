@@ -21,7 +21,7 @@ export default function Register(props){
         e.preventDefault();
         console.log(info);
         axios()
-            .post('login-URL', info)
+            .post('register-endpoint-URL', info)
             .then(res => {localStorage.setItem('token', res.data.payload);
             props.history.push('/wishlist');
     })
