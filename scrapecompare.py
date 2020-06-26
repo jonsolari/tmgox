@@ -19,14 +19,13 @@ def get_detail_data(soup):
     span = soup.find('span', class_="s-item__price").text
     href = soup.find('a', class_="s-item__link", href=True).get('href')
 
-    total = []
+    total = { 'price': 0, 'url' : '' }
 
     if nope != []:
         return None
     else:
-        # total.append(h3)
-        total.append(span[1:])
-        total.append(href)
+        total['price'] = span[1:]
+        total['url'] = href
         return total
 
 
@@ -37,7 +36,8 @@ releaselist = ["mountain goats zopilote machine lp", "mountain goats sweden lp",
 
 discogsurls = ['https://api.discogs.com/releases/1601354', 'https://api.discogs.com/releases/1191772', 'https://api.discogs.com/releases/744810', 'https://api.discogs.com/releases/523351', 'https://api.discogs.com/releases/1217804', 'https://api.discogs.com/releases/1625208', 'https://api.discogs.com/releases/1625203', 'https://api.discogs.com/releases/1210894', 'https://api.discogs.com/releases/1526609', 'https://api.discogs.com/releases/1516102','https://api.discogs.com/releases/1763341', 'https://api.discogs.com/releases/2767923', 'https://api.discogs.com/releases/769960', 'https://api.discogs.com/releases/2873969', 'https://api.discogs.com/releases/4880289', 'https://api.discogs.com/releases/5118937', 'https://api.discogs.com/releases/1350468']
 
-pricedata = {}
+ebaydata = {}
+discogsdata= {}
 
 
 def ebayget(release):
@@ -50,6 +50,6 @@ def discogsget(release):
     return r['lowest_price']
 
 for i in releaselist:
-    pricedata[i] = ebayget(i)
+    ebaydata[i] = ebayget(i)
 
-print(pricedata)
+print(ebaydata)
