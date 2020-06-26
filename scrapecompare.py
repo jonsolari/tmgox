@@ -46,10 +46,32 @@ def ebayget(release):
     return get_detail_data(get_page(url))
 
 def discogsget(release):
+    total = { 'price' : '', 'url' : ''}
     r = requests.get(release).json()
-    return r['lowest_price']
+    price1 = r['lowest_price']
+    total['price'] = price1
+    total['url'] = 'http://www.discogs.com/sell/release/' + str(r['id'])
+    return total
 
-for i in releaselist:
-    ebaydata[i] = ebayget(i)
+i = 0
+while i < len(releaselist):
+    ebaydata[i] = ebayget(releaselist[i])
+    i += 1
 
-print(ebaydata)
+j = 0
+while j < len(discogsurls):
+    discogsdata[j] = discogsget(discogsurls[j])
+    j += 1
+
+# j = 0
+# while j < len(discogsurls):
+#     if ebaydata[j] is not None and float(ebaydata[j]['price']) < float(discogsget(discogsurls[j]['price'])):
+#         ebaydata[j] = discogsget(discogsurls[j])
+#     elif ebaydata[j] is None:
+#         ebaydata[j] = discogsget(discogsurls[j])
+#     else:
+#         pass
+#     j += 1
+
+# print(ebaydata[16]['price'])
+print(discogsdata)
