@@ -63,15 +63,16 @@ while j < len(discogsurls):
     discogsdata[j] = discogsget(discogsurls[j])
     j += 1
 
-# j = 0
-# while j < len(discogsurls):
-#     if ebaydata[j] is not None and float(ebaydata[j]['price']) < float(discogsget(discogsurls[j]['price'])):
-#         ebaydata[j] = discogsget(discogsurls[j])
-#     elif ebaydata[j] is None:
-#         ebaydata[j] = discogsget(discogsurls[j])
-#     else:
-#         pass
-#     j += 1
+k = 0
+while k < len(ebaydata):
+    if ebaydata[k] is not None and float(ebaydata[k]['price']) > discogsdata[k]['price']:
+        ebaydata[k] = discogsdata[k]
+    elif ebaydata[k] is None:
+        ebaydata[k] = discogsdata[k]
+    else:
+        pass
+    k += 1
+    
 
-# print(ebaydata[16]['price'])
-print(discogsdata)
+print(ebaydata)
+# print(discogsdata)
